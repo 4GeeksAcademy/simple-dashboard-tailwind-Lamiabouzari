@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influencer Performance Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-amber-50 via-rose-50 to-cyan-50 text-slate-900 antialiased">
+    <header class="border-b border-slate-200/70 bg-white/80 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 py-5 sm:px-6 md:px-8 lg:px-10">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose-600">Influencer Analytics</p>
+            <h1 class="mt-1 text-2xl font-black tracking-tight sm:text-3xl">Influencer Performance Dashboard</h1>
+            <p class="mt-1 text-sm text-slate-600">Products: A (€50), B (€120), C (€80) • Commission: 15% • Platforms: Instagram, TikTok, YouTube</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-sm">
+            <span class="rounded-full border border-slate-300 bg-white px-3 py-1 font-medium text-slate-700">Q2 2026 report</span>
+            <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 font-semibold text-emerald-700">Live snapshot</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav aria-label="Dashboard navigation" class="border-b border-slate-200/70 bg-white/70">
+      <div class="mx-auto max-w-7xl px-4 py-3 sm:px-6 md:px-8 lg:px-10">
+        <ul class="flex flex-wrap gap-2 text-sm font-medium">
+          <li><a href="#top-kpis" class="inline-flex rounded-full bg-slate-900 px-4 py-2 text-white">Top KPIs</a></li>
+          <li><a href="#middle-drivers" class="inline-flex rounded-full border border-slate-300 bg-white px-4 py-2 text-slate-700">Performance Drivers</a></li>
+          <li><a href="#operational-details" class="inline-flex rounded-full border border-slate-300 bg-white px-4 py-2 text-slate-700">Operational Details</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-7xl space-y-6 px-4 py-6 sm:space-y-8 sm:px-6 md:px-8 lg:px-10 lg:py-8">
+      <section id="top-kpis" aria-labelledby="top-kpis-title" class="space-y-4">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 id="top-kpis-title" class="text-xl font-bold tracking-tight sm:text-2xl">Top KPIs</h2>
+            <p class="text-sm text-slate-600">High-level outcome metrics for the current influencer reporting period.</p>
+          </div>
+          <p class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">Updated daily</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Total Revenue</h3>
+            <p class="mt-3 text-3xl font-black tracking-tight">€60,000</p>
+            <p class="mt-1 text-xs text-slate-500">Sum of campaign-attributed product sales</p>
+            <p class="mt-2 inline-flex rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-700">+11.8% vs previous period</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Total Commissions</h3>
+            <p class="mt-3 text-3xl font-black tracking-tight">€9,000</p>
+            <p class="mt-1 text-xs text-slate-500">€60,000 × 15% commission rate</p>
+            <p class="mt-2 inline-flex rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-700">+11.8% aligned with revenue trend</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Conversion Rate</h3>
+            <p class="mt-3 text-3xl font-black tracking-tight">4.0%</p>
+            <p class="mt-1 text-xs text-slate-500">Purchases divided by qualified clicks</p>
+            <p class="mt-2 inline-flex rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-700">+0.6 pts vs previous period</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Engagement Rate</h3>
+            <p class="mt-3 text-3xl font-black tracking-tight">7.2%</p>
+            <p class="mt-1 text-xs text-slate-500">Engagements divided by campaign reach</p>
+            <p class="mt-2 inline-flex rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold text-amber-700">-0.2 pts vs previous period</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="middle-drivers" aria-labelledby="middle-drivers-title" class="space-y-4">
+        <div>
+          <h2 id="middle-drivers-title" class="text-xl font-bold tracking-tight sm:text-2xl">Middle Drivers</h2>
+          <p class="text-sm text-slate-600">Performance drivers explaining movement in revenue, commission, conversion, and engagement.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-base font-bold">Performance by Platform</h3>
+            <p class="mt-1 text-xs uppercase tracking-[0.14em] text-slate-500">Revenue and engagement by channel</p>
+            <ul class="mt-4 space-y-3 text-sm">
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2">
+                <span class="font-medium">Instagram</span>
+                <span class="font-bold">€20,100 | ER 7.8%</span>
+              </li>
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2">
+                <span class="font-medium">TikTok</span>
+                <span class="font-bold">€25,800 | ER 8.5%</span>
+              </li>
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2">
+                <span class="font-medium">YouTube</span>
+                <span class="font-bold">€14,100 | ER 5.4%</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-base font-bold">Performance by Product</h3>
+            <p class="mt-1 text-xs uppercase tracking-[0.14em] text-slate-500">Revenue contribution by product line</p>
+            <ul class="mt-4 space-y-3 text-sm">
+              <li class="rounded-lg bg-slate-50 px-3 py-2">
+                <div class="flex items-center justify-between"><span class="font-medium">Product A (€50)</span><span class="font-bold">€21,000</span></div>
+                <p class="mt-1 text-xs text-slate-500">420 units • €3,150 commission</p>
+              </li>
+              <li class="rounded-lg bg-slate-50 px-3 py-2">
+                <div class="flex items-center justify-between"><span class="font-medium">Product B (€120)</span><span class="font-bold">€19,800</span></div>
+                <p class="mt-1 text-xs text-slate-500">165 units • €2,970 commission</p>
+              </li>
+              <li class="rounded-lg bg-slate-50 px-3 py-2">
+                <div class="flex items-center justify-between"><span class="font-medium">Product C (€80)</span><span class="font-bold">€19,200</span></div>
+                <p class="mt-1 text-xs text-slate-500">240 units • €2,880 commission</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:col-span-2 lg:col-span-1">
+            <h3 class="text-base font-bold">Sales Funnel / Conversion by Stage</h3>
+            <p class="mt-1 text-xs uppercase tracking-[0.14em] text-slate-500">Step-by-step conversion flow</p>
+            <ol class="mt-4 space-y-3 text-sm">
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2"><span>Impressions</span><span class="font-bold">1,200,000</span></li>
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2"><span>Clicks (6.0%)</span><span class="font-bold">72,000</span></li>
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2"><span>Product Views (40.0%)</span><span class="font-bold">28,800</span></li>
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2"><span>Add to Cart (28.0%)</span><span class="font-bold">8,064</span></li>
+              <li class="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2"><span>Purchases (35.7%)</span><span class="font-bold">2,880</span></li>
+            </ol>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Overall click-to-purchase conversion: 4.0%</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="operational-details" aria-labelledby="operational-details-title" class="space-y-4">
+        <div>
+          <h2 id="operational-details-title" class="text-xl font-bold tracking-tight sm:text-2xl">Operational Details</h2>
+          <p class="text-sm text-slate-600">Detailed reporting tables for products, platforms, and active campaign execution.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm lg:col-span-1">
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <caption class="pb-3 text-left text-sm font-bold text-slate-900">Products performance table</caption>
+                <thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-500">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Product</th>
+                    <th scope="col" class="px-3 py-2">Price</th>
+                    <th scope="col" class="px-3 py-2">Units Sold</th>
+                    <th scope="col" class="px-3 py-2">Revenue</th>
+                    <th scope="col" class="px-3 py-2">Commission</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Product A</th>
+                    <td class="px-3 py-2">€50</td>
+                    <td class="px-3 py-2">420</td>
+                    <td class="px-3 py-2">€21,000</td>
+                    <td class="px-3 py-2">€3,150</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Product B</th>
+                    <td class="px-3 py-2">€120</td>
+                    <td class="px-3 py-2">165</td>
+                    <td class="px-3 py-2">€19,800</td>
+                    <td class="px-3 py-2">€2,970</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Product C</th>
+                    <td class="px-3 py-2">€80</td>
+                    <td class="px-3 py-2">240</td>
+                    <td class="px-3 py-2">€19,200</td>
+                    <td class="px-3 py-2">€2,880</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm lg:col-span-1">
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <caption class="pb-3 text-left text-sm font-bold text-slate-900">Platform performance table</caption>
+                <thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-500">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Platform</th>
+                    <th scope="col" class="px-3 py-2">Engagement Rate</th>
+                    <th scope="col" class="px-3 py-2">Purchases</th>
+                    <th scope="col" class="px-3 py-2">Revenue</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Instagram</th>
+                    <td class="px-3 py-2">7.8%</td>
+                    <td class="px-3 py-2">980</td>
+                    <td class="px-3 py-2">€20,100</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">TikTok</th>
+                    <td class="px-3 py-2">8.5%</td>
+                    <td class="px-3 py-2">1,220</td>
+                    <td class="px-3 py-2">€25,800</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">YouTube</th>
+                    <td class="px-3 py-2">5.4%</td>
+                    <td class="px-3 py-2">680</td>
+                    <td class="px-3 py-2">€14,100</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm lg:col-span-1">
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                <caption class="pb-3 text-left text-sm font-bold text-slate-900">Active campaigns table</caption>
+                <thead class="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-500">
+                  <tr>
+                    <th scope="col" class="px-3 py-2">Campaign</th>
+                    <th scope="col" class="px-3 py-2">Platform</th>
+                    <th scope="col" class="px-3 py-2">Product</th>
+                    <th scope="col" class="px-3 py-2">Revenue</th>
+                    <th scope="col" class="px-3 py-2">Commission</th>
+                    <th scope="col" class="px-3 py-2">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Summer Creator Push</th>
+                    <td class="px-3 py-2">TikTok</td>
+                    <td class="px-3 py-2">Product A</td>
+                    <td class="px-3 py-2">€12,900</td>
+                    <td class="px-3 py-2">€1,935</td>
+                    <td class="px-3 py-2"><span class="rounded-full bg-emerald-100 px-2 py-1 text-xs font-bold text-emerald-700">On track</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Creator Bundle Launch</th>
+                    <td class="px-3 py-2">Instagram</td>
+                    <td class="px-3 py-2">Product B</td>
+                    <td class="px-3 py-2">€18,600</td>
+                    <td class="px-3 py-2">€2,790</td>
+                    <td class="px-3 py-2"><span class="rounded-full bg-amber-100 px-2 py-1 text-xs font-bold text-amber-700">Watch</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="whitespace-nowrap px-3 py-2 font-medium">Expert Review Series</th>
+                    <td class="px-3 py-2">YouTube</td>
+                    <td class="px-3 py-2">Product C</td>
+                    <td class="px-3 py-2">€10,800</td>
+                    <td class="px-3 py-2">€1,620</td>
+                    <td class="px-3 py-2"><span class="rounded-full bg-sky-100 px-2 py-1 text-xs font-bold text-sky-700">Scaling</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
